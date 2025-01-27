@@ -1,12 +1,12 @@
 ---
 title: CodeQL CLI commands manual
 shortTitle: CodeQL CLI manual
+allowTitleToDifferFromFilename: true
 intro: >-
   Reference information for the commands available in the most recent release of
   {% data variables.product.prodname_codeql_cli %}.
 versions:
   fpt: '*'
-  ghae: '*'
   ghec: '*'
   ghes: '*'
 topics:
@@ -56,6 +56,7 @@ children:
   - /generate-extensible-predicate-metadata
   - /generate-log-summary
   - /generate-query-help
+  - /github-merge-results
   - /github-upload-results
   - /pack-add
   - /pack-bundle
@@ -82,6 +83,7 @@ children:
   - /resolve-library-path
   - /resolve-metadata
   - /resolve-ml-models
+  - /resolve-packs
   - /resolve-qlpacks
   - /resolve-qlref
   - /resolve-queries

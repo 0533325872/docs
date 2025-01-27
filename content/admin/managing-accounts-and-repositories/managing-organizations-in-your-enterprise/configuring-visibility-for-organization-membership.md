@@ -7,7 +7,6 @@ redirect_from:
   - /admin/user-management/managing-organizations-in-your-enterprise/configuring-visibility-for-organization-membership
 versions:
   ghes: '*'
-  ghae: '*'
 type: how_to
 topics:
   - Enterprise
@@ -20,7 +19,7 @@ You can also enforce your default setting on all current organization members in
 {% endif %}
 
 {% data reusables.enterprise-accounts.access-enterprise %}
-{% ifversion ghes or ghae %}
+{% ifversion ghes %}
 {% data reusables.enterprise-accounts.policies-tab %}
 {% else %}
 {% data reusables.enterprise-accounts.settings-tab %}
@@ -28,5 +27,5 @@ You can also enforce your default setting on all current organization members in
 {% data reusables.enterprise-accounts.options-tab %}
 1. Under "Default organization membership visibility", select the drop-down menu, and click **Private** or **Public**.
 1. Optionally, to prevent members from changing their membership visibility from the default, select **Enforce for all enterprise members**.
-   ![Screenshot of the "Default organization membership visibility" section on the enterprise's policies page. The "Enforce for all enterprise members" checkbox is highlighted with an orange outline.](/assets/images/enterprise/site-admin-settings/enforce-default-org-membership-visibility-setting.png){% ifversion ghes %}
-1. If you'd like to enforce your new visibility setting on all existing members, use the `ghe-org-membership-update` command-line utility. For more information, see "[AUTOTITLE](/admin/configuration/configuring-your-enterprise/command-line-utilities#ghe-org-membership-update)."{% endif %}
+   ![Screenshot of the "Default organization membership visibility" section. The "Enforce for all enterprise members" checkbox is outlined.](/assets/images/enterprise/site-admin-settings/enforce-default-org-membership-visibility-setting.png){% ifversion ghes %}
+1. If you'd like to enforce your new visibility setting on all existing members, use the `ghe-org-membership-update` command-line utility. For more information, see [AUTOTITLE](/admin/configuration/configuring-your-enterprise/command-line-utilities#ghe-org-membership-update).{% endif %}
