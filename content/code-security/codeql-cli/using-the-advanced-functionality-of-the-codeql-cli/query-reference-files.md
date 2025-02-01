@@ -5,7 +5,6 @@ product: '{% data reusables.gated-features.codeql %}'
 versions:
   fpt: '*'
   ghes: '*'
-  ghae: '*'
   ghec: '*'
 topics:
   - Advanced Security
@@ -15,8 +14,6 @@ redirect_from:
   - /code-security/codeql-cli/query-reference-files
   - /code-security/codeql-cli/codeql-cli-reference/query-reference-files
 ---
-
-{% data reusables.codeql-cli.codeql-site-migration-note %}
 
 ## About query reference files
 
@@ -61,6 +58,4 @@ to the `codeql/javascript-queries` {% data variables.product.prodname_codeql %} 
 AngularJS/DeadAngularJSEventListener.ql
 ```
 
-{% ifversion codeql-packs %}
-For another example, see "[AUTOTITLE](/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/testing-custom-queries)."
-{% endif %}
+For another example, see [AUTOTITLE](/code-security/codeql-cli/using-the-advanced-functionality-of-the-codeql-cli/testing-custom-queries).
